@@ -17,7 +17,10 @@ const initialState = [
 export default function reducer(state = initialState, action = {}) {
   switch (action.type) {
     case ADD:
-      return state;
+      return [
+        ...state,
+        action.book,
+      ];
     case REMOVE:
       return state;
     default:
@@ -26,8 +29,9 @@ export default function reducer(state = initialState, action = {}) {
 }
 export const createBook = (book) => ({
   type: ADD,
-  text: book,
-});
+  book,
+}
+);
 
 export const removeBook = (book) => ({
   type: REMOVE,

@@ -2,13 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Book = (props) => {
-  const { title, author } = props;
+  const { title, author, id } = props;
   return (
     <>
       <div className="BookContainer">
         <h2 className="bookTitle">{title}</h2>
         <p className="authorName">{author}</p>
-        <button className="removeBookButton" type="button">Remove Book</button>
+        <button id={id} className="removeBookButton" type="button">Remove Book</button>
       </div>
     </>
   );
