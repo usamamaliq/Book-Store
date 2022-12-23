@@ -5,12 +5,12 @@ const initialState = [
   {
     title: 'Awaken the Giant Within',
     author: 'Anthony Robins',
-    id: 1,
+    id: '1',
   },
   {
     title: 'Harry Potter',
     author: 'J.K Rowlings',
-    id: 2,
+    id: '2',
   },
 ];
 
@@ -22,7 +22,9 @@ export default function reducer(state = initialState, action = {}) {
         action.book,
       ];
     case REMOVE:
-      return state;
+      return [
+        ...state.filter((book) => book.id !== action.id),
+      ];
     default:
       return state;
   }
@@ -33,7 +35,7 @@ export const createBook = (book) => ({
 }
 );
 
-export const removeBook = (book) => ({
+export const removeBook = (id) => ({
   type: REMOVE,
-  text: book,
+  id,
 });
