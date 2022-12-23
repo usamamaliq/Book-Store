@@ -5,16 +5,19 @@ import { createBook } from '../redux/books/books';
 
 const BookInput = () => {
   const dispatch = useDispatch();
+
+  const AddBook = (e) => {
+    e.preventDefault();
+    const title = e.target.elements.title.value;
+    const author = e.target.elements.author.value;
+    const book = { title, author, id: uuidv4() };
+    dispatch(createBook(book));
+    e.target.reset();
+  };
+
   return (
     <form
-      onSubmit={(e) => {
-        e.preventDefault();
-        const title = e.target.elements.title.value;
-        const author = e.target.elements.author.value;
-        const book = { title, author, id: uuidv4() };
-        dispatch(createBook(book));
-        e.target.reset();
-      }}
+      onSubmit={AddBook}
       className="BookInputContainer"
     >
 

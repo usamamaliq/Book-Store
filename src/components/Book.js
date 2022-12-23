@@ -6,6 +6,12 @@ import { removeBook } from '../redux/books/books';
 const Book = (props) => {
   const dispatch = useDispatch();
   const { title, author, id } = props;
+
+  const removeBookHandler = (e) => {
+    e.preventDefault();
+    dispatch(removeBook(id));
+  };
+
   return (
     <>
       <div className="BookContainer">
@@ -13,10 +19,7 @@ const Book = (props) => {
         <p className="authorName">{author}</p>
         <button
           id={id}
-          onClick={(e) => {
-            e.preventDefault();
-            dispatch(removeBook(id));
-          }}
+          onClick={removeBookHandler}
           className="removeBookButton"
           type="button"
         >
