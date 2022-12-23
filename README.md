@@ -6,6 +6,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
   - [🚀 Live Demo](#live-demo)
+  - [Key Features](#key-features)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -38,6 +39,16 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 > [Live Demo Link]()
+
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+> 
+
+- **List of Books displayed**
+- **Add book to the store**
+- **Delete book from the store**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -75,9 +86,9 @@ To run the project, execute the following command:
 ```sh
   npm start
 ```
-### Run tests
+### Run Linters Checks
 
-To run tests, run the following command:
+To run linters checks, run the following command:
 
 ```sh
 - npx stylelint"**/*.{css,scss}"
@@ -103,7 +114,7 @@ To run tests, run the following command:
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [Refactor with hooks] **[new_feature_1]**
+- [Connect to API] **[new_feature_1]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
