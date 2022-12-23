@@ -10,10 +10,10 @@ const Books = () => {
       <div className="BooksContainer">
         {books.map((book) => (
           <Book
-            key={book.id}
+            key={book.item_id}
             title={book.title}
             author={book.author}
-            id={book.id}
+            itemId={book.item_id}
           />
         ))}
         <BookInput />

@@ -10,8 +10,10 @@ const BookInput = () => {
     e.preventDefault();
     const title = e.target.elements.title.value;
     const author = e.target.elements.author.value;
-    const book = { title, author, id: uuidv4() };
-    dispatch(createBook(book));
+    const payload = {
+      title, author, item_id: uuidv4(), category: 'Story',
+    };
+    dispatch(createBook(payload));
     e.target.reset();
   };
 
