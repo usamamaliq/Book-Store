@@ -38,6 +38,10 @@ body {
   text-decoration: none;
 }
 
+.human {
+  margin-left: auto;
+}
+
 .BooksContainer {
   padding: 4%;
 }
