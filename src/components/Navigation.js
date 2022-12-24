@@ -2,7 +2,7 @@ import { Outlet, Link } from 'react-router-dom';
 
 const Navigation = () => (
   <div className="mainContainer">
-    <h1 className="mainTile">Bookstore CMS</h1>
+    <h1 className="mainTitle">Bookstore CMS</h1>
     <div className="Navigation">
       <ul className="menu">
         <li className="menuItem">

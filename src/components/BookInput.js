@@ -18,15 +18,18 @@ const BookInput = () => {
   };
 
   return (
-    <form
-      onSubmit={AddBook}
-      className="BookInputContainer"
-    >
+    <>
+      <h2 className="addBookTitle">ADD NEW BOOK</h2>
+      <form
+        onSubmit={AddBook}
+        className="BookInputContainer"
+      >
 
-      <input id="title" className="BookInput" type="text" name="title" placeholder="Enter Book Title.." required />
-      <input id="author" className="BookInput" type="text" name="author" placeholder="Enter Author Name.." required />
-      <button className="BookInputButton" type="submit">submit</button>
-    </form>
+        <input id="title" className="BookInput" type="text" name="title" placeholder="Enter Book Title.." required />
+        <input id="author" className="BookInput" type="text" name="author" placeholder="Enter Author Name.." required />
+        <button className="BookInputButton" type="submit">ADD BOOK</button>
+      </form>
+    </>
   );
 };
 export default BookInput;
