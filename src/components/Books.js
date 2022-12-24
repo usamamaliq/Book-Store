@@ -16,6 +16,7 @@ const Books = () => {
             itemId={book.item_id}
           />
         ))}
+        <div className="horizontalLine" />
         <BookInput />
       </div>
     </>

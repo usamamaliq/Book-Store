@@ -6,7 +6,7 @@ const Categories = () => {
   const dispatch = useDispatch();
 
   return (
-    <div>
+    <div className="categories">
       <h1>
         {categories}
       </h1>
@@ -18,7 +18,7 @@ const Categories = () => {
         className="statusButton"
         type="button"
       >
-        Check Status
+        CHECK STATUS
       </button>
     </div>
 

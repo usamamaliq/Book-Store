@@ -1,8 +1,9 @@
 import { Outlet, Link } from 'react-router-dom';
+import human from '../Images/human.png';
 
 const Navigation = () => (
   <div className="mainContainer">
-    <h1 className="mainTile">Bookstore CMS</h1>
+    <h1 className="mainTitle">Bookstore CMS</h1>
     <div className="Navigation">
       <ul className="menu">
         <li className="menuItem">
@@ -14,6 +15,7 @@ const Navigation = () => (
       </ul>
       <Outlet />
     </div>
+    <img src={human} className="human" alt="human" />
   </div>
 );
 
